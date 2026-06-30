@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #060E1C;
+  --color-foreground: #F8F5F0;
+
+  --color-charcoal: #0F1E33;
+  --color-cream: #F8F5F0;
+  --color-sand: #E8E2D8;
+  --color-clay: #C9A84C;
+  --color-muted: #8A96A8;
+
+  --color-border: rgba(201, 168, 76, 0.14);
+  --color-surface: #060E1C;
+  --color-surface-soft: #060E1C;
+  --color-ivory: #F8F5F0;
+  --color-ivory-strong: #E8E2D8;
+
+  --font-fallback-sans: "Segoe UI", "Avenir Next", sans-serif;
+  --font-fallback-heading: "Georgia", "Times New Roman", serif;
+  --font-fallback-accent: "Arial", sans-serif;
+  --font-fallback-cormorant: "Georgia", "Times New Roman", serif;
+}
+
+@theme {
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background: #060E1C;
+  color: var(--color-foreground);
+  font-family: var(--font-sans), var(--font-fallback-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), var(--font-fallback-heading);
+  letter-spacing: 0.01em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(201, 168, 76, 0.28);
+  color: var(--color-surface);
+}
+
+.image-warm {
+  filter: brightness(0.88) saturate(1.08) sepia(0.05);
+}
