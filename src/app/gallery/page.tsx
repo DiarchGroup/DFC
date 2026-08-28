@@ -4,9 +4,20 @@ import { GalleryGrid } from "@/components/gallery/gallery-grid";
 import { PageHero } from "@/components/shared/page-hero";
 
 export const metadata: Metadata = {
-  title: "Gallery",
+  title: {
+    absolute: "Photo Gallery | Diarch Food Court, Patna",
+  },
   description:
     "View food, ambience, and dining space photos from Diarch Food Court.",
+  alternates: {
+    canonical: "/gallery",
+  },
+  openGraph: {
+    title: "Photo Gallery | Diarch Food Court, Patna",
+    description:
+      "View food, ambience, and dining space photos from Diarch Food Court.",
+    url: "/gallery",
+  },
 };
 
 export default function GalleryPage() {

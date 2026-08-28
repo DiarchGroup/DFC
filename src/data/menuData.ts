@@ -512,7 +512,7 @@ export const menuCategories: MenuCategory[] = [
       ["Mutton Handi", 500],
       ["Mutton Karahi", 290],
       ["Mutton Kalimirch", 290],
-      ["Arch Special Chicken (Full)", 600],
+      ["Diarch Special Chicken (Full)", 600],
     ]),
   },
   {
@@ -561,7 +561,7 @@ export const menuCategories: MenuCategory[] = [
 ];
 
 export const featuredDishIds = [
-  "arch-special-chicken-full",
+  "diarch-special-chicken-full",
   "chicken-biryani",
   "paneer-butter-masala",
 ];

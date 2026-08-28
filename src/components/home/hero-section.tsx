@@ -55,8 +55,8 @@ export function HeroSection() {
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 45vw"
+                quality={70}
                 className="image-warm object-cover"
-                unoptimized
               />
               <div className="absolute inset-0 bg-linear-to-t from-[rgba(6,14,28,0.5)] via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-[rgba(201,168,76,0.4)] to-transparent" />

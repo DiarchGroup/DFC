@@ -5,9 +5,20 @@ import { PageHero } from "@/components/shared/page-hero";
 import { ReservationCta } from "@/components/shared/reservation-cta";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: {
+    absolute: "About Us | Diarch Food Court, Patna",
+  },
   description:
     "Learn about Diarch Food Court, established in 2017 in Patna, and the values behind its hospitality.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Us | Diarch Food Court, Patna",
+    description:
+      "Learn about Diarch Food Court, established in 2017 in Patna, and the values behind its hospitality.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {
