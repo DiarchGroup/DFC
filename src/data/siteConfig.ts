@@ -11,6 +11,7 @@ export type ContactDetail = {
 
 export const siteConfig = {
   name: "Diarch Food Court",
+  url: "https://www.diarchfoodcourt.com",
   established: 2017,
   shortDescription:
     "A trusted dining destination in Patna serving flavorful meals in a warm, welcoming setting.",
@@ -47,8 +48,14 @@ export const siteConfig = {
     number: "919060794922",
     bookingMessage: "Hi, I'd like to make a reservation at Diarch Food Court.",
   },
-  email: "info@thearchrestaurant.in",
-  reservationFormAction: "https://formsubmit.co/info@thearchrestaurant.in",
+  email: "info@diarchfoodcourt.com",
+  cuisines: ["Indian", "Indo-Chinese", "Biryani"],
+  priceRange: "₹₹",
+  openingHours: {
+    opens: "10:00",
+    closes: "22:00",
+  },
+  reservationFormAction: "https://formsubmit.co/info@diarchfoodcourt.com",
   hours: [
     { day: "Monday", hours: "10:00 AM - 10:00 PM" },
     { day: "Tuesday", hours: "10:00 AM - 10:00 PM" },
@@ -60,7 +67,7 @@ export const siteConfig = {
   ] as OpeningHour[],
   contactDetails: [
     { label: "Phone", value: "+91 90607 94922", href: "tel:+919060794922" },
-    { label: "Email", value: "info@thearchrestaurant.in", href: "mailto:info@thearchrestaurant.in" },
+    { label: "Email", value: "info@diarchfoodcourt.com", href: "mailto:info@diarchfoodcourt.com" },
     { label: "Address", value: "NH-98, Bhusaula Danapur Chowk, Patna, Bihar" },
     { label: "Established", value: "2017" },
   ] as ContactDetail[],

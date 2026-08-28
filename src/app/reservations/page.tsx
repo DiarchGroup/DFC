@@ -4,9 +4,20 @@ import { ReservationForm } from "@/components/reservations/reservation-form";
 import { PageHero } from "@/components/shared/page-hero";
 
 export const metadata: Metadata = {
-  title: "Reservations",
+  title: {
+    absolute: "Reservations | Diarch Food Court, Patna",
+  },
   description:
     "Reserve your table at Diarch Food Court in Patna and confirm quickly with our team on WhatsApp.",
+  alternates: {
+    canonical: "/reservations",
+  },
+  openGraph: {
+    title: "Reservations | Diarch Food Court, Patna",
+    description:
+      "Reserve your table at Diarch Food Court in Patna and confirm quickly with our team on WhatsApp.",
+    url: "/reservations",
+  },
 };
 
 export default function ReservationsPage() {

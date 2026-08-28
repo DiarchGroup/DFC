@@ -4,9 +4,20 @@ import { ContactDetails } from "@/components/contact/contact-details";
 import { PageHero } from "@/components/shared/page-hero";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: {
+    absolute: "Contact & Location | Diarch Food Court, Danapur Patna",
+  },
   description:
-    "Find Diarch Food Court address, phone, WhatsApp, email, opening hours, and location details.",
+    "Find Diarch Food Court address, phone, WhatsApp, email, opening hours, and location details in Danapur, Patna.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact & Location | Diarch Food Court, Danapur Patna",
+    description:
+      "Find Diarch Food Court address, phone, WhatsApp, email, opening hours, and location details in Danapur, Patna.",
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {

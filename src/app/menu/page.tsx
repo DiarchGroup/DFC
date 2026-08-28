@@ -4,9 +4,20 @@ import { MenuBrowser } from "@/components/menu/menu-browser";
 import { PageHero } from "@/components/shared/page-hero";
 
 export const metadata: Metadata = {
-  title: "Menu",
+  title: {
+    absolute: "Menu | Diarch Food Court, Patna",
+  },
   description:
-    "Browse Diarch Food Court menu and discover options for family meals, group dining, and everyday favorites.",
+    "Browse the Diarch Food Court menu — biryani, tandoori, Indo-Chinese and family meals in Danapur, Patna.",
+  alternates: {
+    canonical: "/menu",
+  },
+  openGraph: {
+    title: "Menu | Diarch Food Court, Patna",
+    description:
+      "Browse the Diarch Food Court menu — biryani, tandoori, Indo-Chinese and family meals in Danapur, Patna.",
+    url: "/menu",
+  },
 };
 
 export default function MenuPage() {

@@ -10,9 +10,14 @@ import { TrustBar } from "@/components/layout/trust-bar";
 import { ReservationCta } from "@/components/shared/reservation-cta";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: {
+    absolute: "Diarch Food Court | Biryani & Family Restaurant in Danapur, Patna",
+  },
   description:
-    "Experience Diarch Food Court in Patna, serving guests daily since 2017 with flavorful dishes and warm hospitality.",
+    "Diarch Food Court on NH-98, Bhusaula Danapur Chowk, Patna — biryani, kebabs, tandoori and Indo-Chinese favourites served daily since 2017. Book a table on WhatsApp.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function HomePage() {
