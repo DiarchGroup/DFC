@@ -29,6 +29,7 @@ export function PageHero({
           eyebrow={eyebrow}
           title={title}
           description={description}
+          level="h1"
           className="max-w-3xl [&_h2]:text-(--color-ivory) [&_p:last-child]:text-[rgba(232,226,216,0.78)]"
         />
         {ctaLabel && ctaHref ? (
