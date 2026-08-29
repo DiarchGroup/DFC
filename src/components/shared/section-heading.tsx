@@ -4,6 +4,7 @@ type SectionHeadingProps = {
   description?: string;
   align?: "left" | "center";
   className?: string;
+  level?: "h1" | "h2";
 };
 
 export function SectionHeading({
@@ -12,7 +13,9 @@ export function SectionHeading({
   description,
   align = "left",
   className,
+  level = "h2",
 }: SectionHeadingProps) {
+  const Heading = level;
   const alignment =
     align === "center" ? "items-center text-center mx-auto" : "items-start text-left";
 
@@ -30,9 +33,9 @@ export function SectionHeading({
           </p>
         </div>
       ) : null}
-      <h2 className="font-(--font-heading) text-3xl leading-tight text-(--color-ivory) sm:text-4xl">
+      <Heading className="font-(--font-heading) text-3xl leading-tight text-(--color-ivory) sm:text-4xl">
         {title}
-      </h2>
+      </Heading>
       {description ? (
         <p className="text-base leading-7 text-(--color-muted)">{description}</p>
       ) : null}
