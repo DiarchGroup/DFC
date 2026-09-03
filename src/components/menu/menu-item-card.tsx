@@ -1,4 +1,5 @@
 import { type MenuItem } from "@/data/menuData";
+import Image from "next/image";
 
 const tagLabelMap: Record<string, string> = {
   vegetarian: "Veg",
@@ -28,6 +29,17 @@ type MenuItemCardProps = {
 export function MenuItemCard({ item }: MenuItemCardProps) {
   return (
     <div className="group relative rounded-2xl border border-[rgba(201,168,76,0.10)] bg-[rgba(15,30,51,0.5)] p-5 backdrop-blur-sm transition-all duration-300 hover:border-[rgba(201,168,76,0.25)] hover:bg-[rgba(15,30,51,0.75)]">
+      {item.image && (
+        <div className="relative mb-5 aspect-[16/9] overflow-hidden rounded-xl border border-[rgba(201,168,76,0.10)]">
+          <Image
+            src={item.image}
+            alt={item.name}
+            fill
+            sizes="(min-width: 1024px) 40vw, 100vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+      )}
       <div className="flex items-baseline justify-between gap-3">
         <h3 className="font-[var(--font-heading)] text-xl leading-snug text-[var(--color-ivory)]">
           {item.name}

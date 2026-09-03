@@ -7,6 +7,7 @@ export type MenuItem = {
   name: string;
   description: string;
   price: number;
+  image?: string;
   spiceLevel: SpiceLevel;
   allergens: AllergenTag[];
   tags?: DietaryTag[];
@@ -21,6 +22,18 @@ export type MenuCategory = {
 };
 
 type RawItem = [name: string, price: number];
+
+const menuImages: Record<string, string> = {
+  "French Fry": "/French fires.jpg",
+  "Butter Naan": "/butter naan.jpg",
+  "Cucumber Salad": "/cucumber salad.png",
+  "Dal Fry": "/daal fry.png",
+  "Green Salad": "/green salad.png",
+  "Plain Naan": "/naan.png",
+  "Paneer Biryani": "/paneer biryani.png",
+  "Steam Rice": "/rice.png",
+  "Veg Biryani": "/vegitable briyani.png",
+};
 
 function slugify(value: string) {
   return value
@@ -259,6 +272,7 @@ function toItems(categoryId: string, categoryName: string, items: RawItem[]) {
       name,
       description: buildDescription(name, spiceLevel, categoryId),
       price,
+      image: menuImages[name],
       spiceLevel,
       allergens,
       tags: getDietaryTags(name, spiceLevel, allergens),
